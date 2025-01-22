@@ -1,6 +1,6 @@
 ## Intro Agile
 
-Agile is a software delivery metholody, developed to combat traditional software development (Waterfall) that was reliant on processes over people.
+Agile is a software delivery philosophy, developed to combat traditional software development (Waterfall) that was reliant on processes over people.
 
 Agile came about as a set of principles, with various implementations (e.g. TDD, Scrum, Lean, Kanban).
 
