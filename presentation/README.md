@@ -39,7 +39,11 @@
 #### Delivery
 
 - speed, slow down.
+  
 - vary the tone.
+  
 - confidence, project your voice, speak from the chest.
+  
 - "check in" with the audience throughout.
+  
 - hand gestures, smile, eye contact.

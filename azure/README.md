@@ -1,4 +1,4 @@
-## Cloud Computing Fundamentaks
+## Cloud Computing Fundamentals
 
 - Cloud computing is a way of accessing computing resources usally over the internet.
 - The services provided can vary from Compute, Storage and Database, Analytics and AI/ML, IoT, Networking etc.
