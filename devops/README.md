@@ -1,4 +1,4 @@
-# What is devops?
+## What is devops?
 
 - Culture of devs and ops working closely together, a philosophy.
 - Aspects of continuous improvement (automation), make developers’ lives easier e.g. click a button to initiate CI/CD.

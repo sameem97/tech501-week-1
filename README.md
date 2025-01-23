@@ -8,3 +8,5 @@ Welcome to my week 1 learning repo! The purpose of this repo is to showcase my d
 - [Git](git/README.md)
 - [Azure](azure/README.md)
 - [Bash Scripting](bash_scripting/README.md)
+- [Presentation Skills](presentation/README.md)
+- [DevOps](devops/README.md)
