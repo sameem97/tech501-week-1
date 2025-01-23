@@ -67,7 +67,7 @@ e.g. sudo cp index.html index.html.bak
 - You can amend the contents of the `index.html` file to change the content and layout of the default nginx webpage.
 - In my case, I changed it to "welcome to my custom webpage!" greeting, with a farewell message at the end.
 
-## Add image to the nginx webpage
+## Download image onto the VM
 
 - cd into the html directory
 - Download image onto the VM using wget command
@@ -76,3 +76,19 @@ e.g. sudo cp index.html index.html.bak
 cd /var/www/html
 wget https://example_image.com/path-to-your-image.jpg
 ```
+
+## Add image to the nginx webpage
+
+- edit the `index.html` file:
+
+```bash
+sudo nano /var/www/html/index.html
+```
+
+- add the following image tag inside the body section:
+
+```html
+<img src="my-image.jpg" alt="My Image" width="500">
+```
+
+- save and exit the file. Refresh the page in your browser. It should display the custom content and the downloaded image.

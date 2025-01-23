@@ -1,4 +1,5 @@
 # Week 1 Learning
+Welcome to my week 1 learning repo! The purpose of this repo is to showcase my devops related week 1 learning. Happy coding!
 
 **Topics**
 
