@@ -24,6 +24,12 @@ sudo apt upgrade -y
 sudo apt install nginx
 ```
 
+### Start the Nginx service
+
+```bash
+sudo systemctl start nginx
+```
+
 ### Check nginx status
 
 - To view nginx PID:
