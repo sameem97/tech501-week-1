@@ -1,6 +1,17 @@
-## Git Fundamentals
+# Git
 
-### Git Workflow
+- [Git](#git)
+  - [Introduction](#introduction)
+  - [Git Workflow](#git-workflow)
+  - [Key Commands](#key-commands)
+
+## Introduction
+
+- Git is a CLI version control tool, used to create snapshots of a repository.
+- It is distinct from GitHub, which can be used for online code hosting, collaboration and CI/CD purposes as well as lots of other functionality.
+- Nonetheless, Git and GitHub are often used together.
+  
+## Git Workflow
 
 A git project has three parts:
 
@@ -10,7 +21,7 @@ A git project has three parts:
 
 The git workflow consists of editing files in the working directory, adding files to the staging area, and saving changes to a git repository.
 
-### Key Commands
+## Key Commands
 
 * `git init` to initialise a git repo.
 * `git Status` to see current status of the repository.

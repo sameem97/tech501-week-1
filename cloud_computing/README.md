@@ -1,4 +1,30 @@
-## Cloud Computing Fundamentals
+# Cloud Computing
+
+- [Cloud Computing](#cloud-computing)
+  - [Introduction](#introduction)
+    - [How do we know if something is in the Cloud?](#how-do-we-know-if-something-is-in-the-cloud)
+    - [Difference between on-prem and the cloud?](#difference-between-on-prem-and-the-cloud)
+    - [Cloud Deployment Models](#cloud-deployment-models)
+    - [Types of Cloud Services: IaaS, PaaS, SaaS](#types-of-cloud-services-iaas-paas-saas)
+    - [Advantages/Disadvantags of the Cloud for businesses](#advantagesdisadvantags-of-the-cloud-for-businesses)
+    - [OpEx vs CapEx](#opex-vs-capex)
+    - [Is migrating to the cloud always cheaper?](#is-migrating-to-the-cloud-always-cheaper)
+    - [Cloud Market Share](#cloud-market-share)
+    - [What are the 3 largest cloud providers known for?](#what-are-the-3-largest-cloud-providers-known-for)
+    - [Which cloud provider might be the best? Why?](#which-cloud-provider-might-be-the-best-why)
+    - [Costs in the cloud](#costs-in-the-cloud)
+    - [The 4 Pillars of DevOps and link to cloud](#the-4-pillars-of-devops-and-link-to-cloud)
+  - [Azure](#azure)
+    - [Best practises](#best-practises)
+      - [Naming conventions](#naming-conventions)
+      - [Tags](#tags)
+    - [Test Exercises](#test-exercises)
+      - [Creating a VNet](#creating-a-vnet)
+      - [Creating Subnets](#creating-subnets)
+      - [Creating the VM](#creating-the-vm)
+      - [Connecting to the VM](#connecting-to-the-vm)
+
+## Introduction
 
 - Cloud computing is a way of accessing computing resources usally over the internet.
 - The services provided can vary from Compute, Storage and Database, Analytics and AI/ML, IoT, Networking etc.
@@ -133,7 +159,9 @@ The **shared responsibility model** for the cloud means that depending on the cl
 
 Cloud technologies complement DevOps by enabling continuous delivery, scalability, and seamless integration of tools.
 
-### Azure Best practises
+## Azure
+
+### Best practises
 
 #### Naming conventions
 
@@ -144,7 +172,7 @@ Cloud technologies complement DevOps by enabling continuous delivery, scalabilit
 
 - Added key: value owner: Sameem as tags to serve as identifiers for my resources.
 
-### Test Exercise
+### Test Exercises
 
 - As an exercise, will create a VNet, 2 subnets and an Ubuntu VM that we will access via SSH.
 - See below for the **architecture**:

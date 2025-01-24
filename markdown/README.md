@@ -1,30 +1,53 @@
-## Markdowm Basics
+# Markdowm Basics
 
-### Headings
+- [Markdowm Basics](#markdowm-basics)
+  - [Headings](#headings)
+  - [Text Formatting](#text-formatting)
+    - [Bold](#bold)
+    - [Italics](#italics)
+    - [Bold and Italic](#bold-and-italic)
+    - [Strikethrough](#strikethrough)
+  - [Lists](#lists)
+    - [Unordered Lists](#unordered-lists)
+    - [Ordered Lists](#ordered-lists)
+  - [Links](#links)
+    - [Inline Links](#inline-links)
+  - [Images](#images)
+  - [Code](#code)
+    - [Inline Code](#inline-code)
+    - [Code blocks](#code-blocks)
+    - [Blockquotes](#blockquotes)
+    - [Horizontal Rules](#horizontal-rules)
+    - [Tables](#tables)
+    - [Task Lists](#task-lists)
+    - [Escape Characters](#escape-characters)
+    - [Extensions (Optional Features)](#extensions-optional-features)
+
+## Headings
 
 The number of # symbols corresponds to the heading level from 1 to 6.
 
-### Text Formatting
+## Text Formatting
 
-#### Bold
+### Bold
 
 Use ** around the text to make it **bold**.
 
-#### Italics
+### Italics
 
 Use * around the ext to make it *italic*.
 
-#### Bold and Italic
+### Bold and Italic
 
 Use *** to make it ***bold*** and ***italic***.
 
-#### Strikethrough
+### Strikethrough
 
 Use ~~ around the text for ~~strikethrough~~.
 
-### Lists
+## Lists
 
-#### Unordered Lists
+### Unordered Lists
 
 Use - followed by a space for a space. For example:
 
@@ -32,7 +55,7 @@ Use - followed by a space for a space. For example:
 - Item 2
 - Item 3
 
-#### Ordered Lists
+### Ordered Lists
 
 Use numbers followed by a period.
 
@@ -40,48 +63,48 @@ Use numbers followed by a period.
 2. Item 2
 3. Item 3
 
-### Links
+## Links
 
-#### Inline Links
+### Inline Links
 
 Use [text][URL]. For example:
 
 [Visit OpenAI](https://www.openai.com)
 
-### Images
+## Images
 
 Use ![alt text](image URL) to insert an image.
 
 ![Markdown Logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
 
-### Code
+## Code
 
-#### Inline Code
+### Inline Code
 
 Use backticks (`):
 
 Inline `code`.
 
-#### Code blocks
+### Code blocks
 
 Use triple backticks (```).
 
 ```def hello_world(): print("Hello, world!")```
 
-#### Blockquotes
+### Blockquotes
 
 Use > for blockquotes.
 
 > This is a blockquote.
 > It can span multiple lines.
 
-#### Horizontal Rules
+### Horizontal Rules
 
 Use --- to create a horizontal line.
 
 ---
 
-#### Tables
+### Tables
 
 Use pipes(|) and dashes (-) to create tables.
 
@@ -90,20 +113,20 @@ Use pipes(|) and dashes (-) to create tables.
 | Row 1    | Data     | More     |
 | Row 2    | Data     | More     |
 
-#### Task Lists
+### Task Lists
 
 Use - [ ] for unchecked items and - [x] for checked items.
 
 - [ ] Task 1
 - [x] Task 2 (completed)
 
-#### Escape Characters
+### Escape Characters
 
 To display Markdown syntax as text (e.g., *, _, #), use a backslash (\).
 
 \*Not italicised\*
 
-#### Extensions (Optional Features)
+### Extensions (Optional Features)
 
 Some Markdown processors support extensions:
 

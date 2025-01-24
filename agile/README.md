@@ -1,4 +1,11 @@
-## Intro Agile
+# Agile
+
+- [Agile](#agile)
+  - [Intro](#intro)
+  - [Scrum](#scrum)
+  - [Agile and DevOps](#agile-and-devops)
+
+## Intro
 
 Agile is a software delivery philosophy, developed to combat traditional software development (Waterfall) that was reliant on processes over people.
 
@@ -14,7 +21,7 @@ Most common implementation of Agile, development team is cross-functional (Scrum
 
 ![Scrum Framework](../images/scrum-framework-9.29.23.png)
 
-### Agile vs DevOps
+## Agile and DevOps
 
 Agile is complementary to DevOps. Agile emphasises the concept of short release cycles, MVP and accommodating changing requirements. Similarly, devops focuses on continuous integration, merging code early and releasing features quickly to end users.
 

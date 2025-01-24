@@ -1,6 +1,14 @@
-## Presentation skills
+# Presentation skills
 
-### General feedback
+- [Presentation skills](#presentation-skills)
+  - [General feedback](#general-feedback)
+  - [Slides](#slides)
+    - [Content](#content)
+    - [Visuals](#visuals)
+    - [Design](#design)
+    - [Delivery](#delivery)
+
+## General feedback
 
 - Include full names on title slide
   
@@ -8,9 +16,9 @@
   
 - Introduce yourself before speaking e.g. "Hi my name is Sameem and I will be talking about..."
 
-### Slides
+## Slides
 
-#### Content
+### Content
 
 - Slides should be supporting your presentation, they shouldn't suffice on their own. If they do, too much writing on the slides.
   
@@ -20,13 +28,13 @@
 
 - Does the audience NEED to know everything on the slides? Think core message, abstraction. Less is more. Has more impact on the audience. Can do several iterations to "trim the fat".
   
-#### Visuals
+### Visuals
 
 - Add more visuals, especially diagrams. Draw your own if you can.
   
 - Reference diagrams if you have put them on there.
 
-#### Design
+### Design
 
 - Have a conclusion/thank you slide. Summarise the key takeaways. Ask if audience has any questions.
 
@@ -36,7 +44,7 @@
 
 - Use of **bold**/*italics* to draw your audience's eyes.
 
-#### Delivery
+### Delivery
 
 - speed, slow down.
   
