@@ -21,6 +21,18 @@
     - [Environment Variables](#environment-variables)
     - [Piping](#piping)
     - [File Permissions](#file-permissions)
+    - [Processes](#processes)
+      - [Introduction](#introduction)
+      - [What Is a Process?](#what-is-a-process)
+      - [Types of Processes](#types-of-processes)
+      - [Process Lifecycle](#process-lifecycle)
+      - [Managing Processes](#managing-processes)
+        - [1. Viewing Processes](#1-viewing-processes)
+        - [2. Stoppling/Killing Processes](#2-stopplingkilling-processes)
+        - [3. Controlling Processes](#3-controlling-processes)
+      - [Key Process Attributes](#key-process-attributes)
+      - [States of a Process](#states-of-a-process)
+      - [Important Commands for Processes](#important-commands-for-processes)
 
 ## Bash Shell Scripting
 
@@ -119,10 +131,66 @@ wget https://example_image.com/path-to-your-image.jpg
 sudo nano /var/www/html/index.html
 ```
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+```
+
 - add the following image tag inside the body section:
 
 ```html
-<img src="my-image.jpg" alt="My Image" width="500">
+<img src="downloaded_image_name.jpg" alt="My Image" width="500">
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sameem's Custom Webpage!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to my custom webpage!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+<img src="NGINX-logo-rgb-large-667x224.png" alt="My Image" width="500">
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thanks for visiting. Take care!.</em></p>
+</body>
+</html>
 ```
 
 - save and exit the file. Refresh the page in your browser. It should display the custom content and the downloaded image.
@@ -285,3 +353,121 @@ chmod +x /home/adminsuer/provision.sh
 - **Usage**:
   - File permissions are crucial for system security and proper access control.
   - They ensure that only authorized users can perform specific actions on files and directories.
+
+### Processes
+
+#### Introduction
+
+- In Linux, a process is a running instance of a program. It represents the execution of a program in the system's memory, complete with its allocated resources (e.g., CPU, memory, and I/O).
+
+- Processes are at the core of Linux operations, and understanding how to manage them is critical for system administration and DevOps tasks.
+
+#### What Is a Process?
+
+- A process is a program in execution.
+
+- Every process has:
+  - Unique ID: Called the Process ID (PID).
+  - Parent Process: The process that started it (Parent Process ID or PPID).
+  - State: Indicates whether the process is running, sleeping, stopped, or terminated.
+
+#### Types of Processes
+
+1. Foreground Processes
+   - Run directly from the terminal and occupy the terminal until they finish.
+   - Example: Running python my_script.py.
+
+2. Background Processes
+   - Run independently of the terminal and do not block user input.
+   - Example: Running ./my_program &.
+
+3. Daemon Processes
+   - Background processes that run without user interaction, often started during system boot.
+   - Example: sshd (Secure Shell Daemon).
+
+#### Process Lifecycle
+
+A process typically follows these steps:
+
+1. Creation:
+
+   - Created by another process using the fork() system call.
+   - Example: The shell creates a new process when you run a command.
+
+2. Execution:
+
+   - Executes the program with its allocated resources.
+
+3. Waiting:
+
+   - A process may wait for I/O or other resources.
+
+4. Termination:
+
+   - Ends its execution and releases resources using the exit() system call.
+
+#### Managing Processes
+
+##### 1. Viewing Processes
+
+- Use commands to see running processes:
+  - `ps`: Displays active processes.
+  - `top` or `htop`: Interactive tools to monitor processes in real time.
+  - `pgrep <name>`: Find the PID of a process by name.
+
+##### 2. Stoppling/Killing Processes
+
+- 3 main levels for `kill` as below:
+
+| Signal Name | Signal Number | Command       | Purpose                        |
+|-------------|---------------|---------------|--------------------------------|
+| SIGTERM     | 15            | `kill <PID>`    | Graceful termination.          |
+| SIGKILL     | 9             | `kill -9 <PID>` | Immediate/forced termination.  |
+| SIGHUP      | 1             | `kill -1 <PID>` | Reload configuration/restart.  |
+
+- `killall <name>`: Kills all processes by name.
+
+##### 3. Controlling Processes
+
+- Pause a Process: `kill -STOP <PID>`
+- Resume a Process: `kill -CONT <PID>`
+- Move a Foreground Process to the Background:
+  - Press `Ctrl+Z` to pause, then type `bg` to resume it in the background.
+
+#### Key Process Attributes
+
+- **PID**: Process ID (unique identifier for a process).
+- **PPID**: Parent Process ID (the PID of the process that created it).
+- **UID/GID**: User ID and Group ID that own the process.
+- **Priority**: Determines how much CPU time a process gets (controlled with `nice` and `renice`).
+
+#### States of a Process
+
+- **Running (R)**: Actively using the CPU.
+- **Sleeping (S)**: Waiting for a resource (e.g., I/O or user input).
+- **Stopped (T)**: Suspended, often by a signal like SIGSTOP.
+- **Zombie (Z)**: Completed execution but still listed in the process table because its parent hasn’t read its exit status.
+
+#### Important Commands for Processes
+
+| Command        | Description                                   |
+|----------------|-----------------------------------------------|
+| `ps`           | Displays a snapshot of currently running processes. |
+| `top`          | Interactive tool to monitor system performance and processes in real-time. |
+| `htop`         | User-friendly version of `top` with a better interface. |
+| `pgrep`        | Finds the process ID (PID) by matching the process name. |
+| `kill`         | Sends a signal to terminate or control a process by its PID. |
+| `killall`      | Sends a signal to all processes matching a specific name. |
+| `jobs`         | Lists background jobs in the current shell session. |
+| `fg`           | Brings a background job to the foreground.          |
+| `bg`           | Resumes a paused job and runs it in the background. |
+| `nice`         | Starts a process with a specific priority.          |
+| `renice`       | Changes the priority of a running process.          |
+| `pkill`        | Sends a signal to terminate processes by name.      |
+| `nohup`        | Runs a process that continues after the terminal is closed. |
+| `systemctl`    | Starts, stops, enables, or disables services (for systemd). |
+| `service`      | Manages services for older init systems.            |
+| `strace`       | Traces system calls and signals for a process (useful for debugging). |
+| `lsof`         | Lists open files by processes.                      |
+| `free`         | Displays memory usage information.                  |
+| `uptime`       | Shows how long the system has been running and load averages. |
